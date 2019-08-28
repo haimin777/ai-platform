@@ -1,40 +1,20 @@
 Create and train simple GAN to create MNIST images
 ======
-**GAN_MNIST** is a keras implementation of simple GAN for image generation.
+**GAN_MNIST** is a keras implementation of simple GAN for image generation with advanced logging via MLflow
 
-#### Generation model (random initialisation)
+#### Generation model results (random initialisation)
 ![Screenshot software](https://github.com/haimin777/ai-platform/blob/master/tasks/computer-vision/image-generation/GAN_MNIST/noise.png "screenshot software")
 
-## Download
-* [Version X.Y](https://github.com/username/sw-name/archive/master.zip)
-* Other Versions
+#### Generation model results (10 epochs)
+![Screenshot software](https://github.com/haimin777/ai-platform/blob/master/tasks/computer-vision/image-generation/GAN_MNIST/10epochs.png "screenshot software")
 
-## Usage
-```$ git clone https://github.com/username/software-project.git
-...
-```
-## Contributors
+#### Generation model results (10 epochs)
+![Screenshot software](https://github.com/haimin777/ai-platform/blob/master/tasks/computer-vision/image-generation/GAN_MNIST/50epochs.png "screenshot software")
 
-### Contributors on GitHub
-* [Contributors](https://github.com/username/sw-name/graphs/contributors)
 
-### Translations
-* [Transifex](https://www.transifex.com/projects/p/sw-name/)
-
-### Third party libraries
-* see [LIBRARIES](https://github.com/username/sw-name/blob/master/LIBRARIES.md) files
-
-## License 
-* see [LICENSE](https://github.com/username/sw-name/blob/master/LICENSE.md) file
-
-## Version 
-* Version X.Y
-
-## How-to use this code
-* see [INSTRUCTIONS](https://github.com/username/sw-name/blob/master/INSTRUCTIONS.md) file
 
 ## Contact
-#### Developer/Company
-* Homepage: 
-* e-mail: 
-* Twitter: [@twitterhandle](https://twitter.com/twitterhandle "twitterhandle on twitter")
+#### Developer
+
+* e-mail: alexhaimin@gmail.com
+* Telegram: @WasteML112
