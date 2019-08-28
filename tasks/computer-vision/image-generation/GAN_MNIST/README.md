@@ -1,9 +1,9 @@
 Create and train simple GAN to create MNIST images
 ======
-**Software Name** is a software for things. Short description here.
+**GAN_MNIST** is a keras implementation of simple GAN for image generation.
 
-#### Screenshot
-![Screenshot software](http://url/screenshot-software.png "screenshot software")
+#### Generation model (random initialisation)
+![Screenshot software](https://github.com/haimin777/ai-platform/blob/master/tasks/computer-vision/image-generation/GAN_MNIST/noise.png "screenshot software")
 
 ## Download
 * [Version X.Y](https://github.com/username/sw-name/archive/master.zip)
