@@ -125,9 +125,6 @@ class mnist_GAN_Generator(object):
                 g_loss = gan_model.train_on_batch(X_gan, y_gan)
                 # summarize loss on this batch
                 print('>%d, %d/%d, d=%.3f, g=%.3f' % (i + 1, j + 1, bat_per_epo, d_loss, g_loss))
-            # evaluate the model performance, sometimes
-            # if (i+1) % 10 == 0:
-            # summarize_performance(i, g_model, d_model, dataset, latent_dim)
 
         return g_model
 
