@@ -6,11 +6,9 @@ mlflow.keras.autolog()
 
 from keras.datasets.mnist import load_data
 
-# load the images into memory
+# load data
 (trainX, trainy), (testX, testy) = load_data()
-# summarize the shape of the dataset
-print('Train', trainX.shape, trainy.shape)
-print('Test', testX.shape, testy.shape)
+
 
 from keras.models import Sequential
 from keras.layers import Conv2D, Dropout, Flatten, Dense, LeakyReLU, Conv2DTranspose, Reshape
@@ -132,3 +130,19 @@ class mnist_GAN_Generator(object):
             # summarize_performance(i, g_model, d_model, dataset, latent_dim)
 
         return g_model
+
+
+if __name__ == '__main__':
+
+
+    gan_obj = mnist_GAN_Generator(trainX)
+
+    g_model = gan_obj.define_generator()
+    d_model = gan_obj.define_discriminator()
+    gan_model = gan_obj.define_gan(g_model, d_model)
+
+    #use generation model to generate synthetic MNIST digits
+
+    generation_model = gan_obj.train(g_model, d_model, gan_model)
+
+
