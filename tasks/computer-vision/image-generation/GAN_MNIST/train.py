@@ -27,6 +27,11 @@ from numpy.random import randn
 from numpy.random import randint
 
 
+
+@click.command(help="Trains an GAN Keras model on MNIST dataset."
+                    "The model and its metrics are logged with mlflow.")
+@click.option("--epochs", type=click.INT, default=10, help="Number of training epochs")
+
 class mnist_GAN_Generator(object):
 
     def __init__(self, X_real):
@@ -134,6 +139,19 @@ class mnist_GAN_Generator(object):
 
         return g_model
 
+    def plot_results(self, g_model):
+        X, _ = self.generate_fake_samples(g_model, n_samples=25)
+        # plot the generated samples
+        for i in range(n_samples):
+            # define subplot
+            plt.subplot(5, 5, 1 + i)
+            # turn off axis labels
+            plt.axis('off')
+            # plot single image
+            plt.imshow(X[i, :, :, 0], cmap='gray_r')
+        # show the figure
+        plt.show()
+
 
 if __name__ == '__main__':
 
@@ -147,5 +165,6 @@ if __name__ == '__main__':
     #use generation model to generate synthetic MNIST digits
 
     generation_model = gan_obj.train(g_model, d_model, gan_model)
+    gan_obj.plot_results(generation_model)
 
 

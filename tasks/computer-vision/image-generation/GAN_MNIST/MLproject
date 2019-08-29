@@ -1,0 +1,11 @@
+name: GAN_MNIST
+
+conda_env: conda.yaml
+
+entry_points:
+  # train Keras GAN model and display results
+  main:
+    parameters:
+      epochs: {type: int, default: 10}
+
+    command: "python train.py --epochs {epochs}"
