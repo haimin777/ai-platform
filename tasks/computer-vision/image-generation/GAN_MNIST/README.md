@@ -12,10 +12,11 @@ Create and train simple GAN to create MNIST images
 ![Screenshot software](https://github.com/haimin777/ai-platform/blob/master/tasks/computer-vision/image-generation/GAN_MNIST/50epochs.png "screenshot software")
 
 ## Install Conda
-!wget -c https://repo.continuum.io/archive/Anaconda3-2019.07-Linux-x86_64.sh
+wget -c https://repo.continuum.io/archive/Anaconda3-2019.07-Linux-x86_64.sh
 
-!chmod +x Anaconda3-2019.07-Linux-x86_64.sh
-!bash ./Anaconda3-2019.07-Linux-x86_64.sh -b -f -p /usr/local
+chmod +x Anaconda3-2019.07-Linux-x86_64.sh
+bash ./Anaconda3-2019.07-Linux-x86_64.sh -b -f -p /usr/local
+
 
 ## run project
 
