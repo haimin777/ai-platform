@@ -29,7 +29,7 @@ from numpy.random import randint
 
 
 #@click.command(help="Trains an GAN Keras model on MNIST dataset."
-                    "The model and its metrics are logged with mlflow.")
+                  #  "The model and its metrics are logged with mlflow.")
 #@click.option("--epochs", type=click.INT, default=10, help="Number of training epochs")
 
 class mnist_GAN_Generator(object):
