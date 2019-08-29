@@ -11,8 +11,11 @@ Create and train simple GAN to create MNIST images
 #### Generation model results (50 epochs)
 ![Screenshot software](https://github.com/haimin777/ai-platform/blob/master/tasks/computer-vision/image-generation/GAN_MNIST/50epochs.png "screenshot software")
 
+## Install Conda
 
 
+## run project
+*mlflow run tasks/computer-vision/image-generation/GAN_MNIST
 ## Contact
 #### Developer
 
